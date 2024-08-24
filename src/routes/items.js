@@ -34,9 +34,9 @@ router.put(
     '/items',
     [
         body('id').isInt({ gt: 0 }).withMessage('Id must be greater than 0'),
-        body('name').not().isEmpty().withMessage('Name must not be empty'),
-        body('description').not().isEmpty().withMessage('Description must not be empty'),
-        body('price').isFloat({ gt: 0 }).withMessage('Price must be greater than 0')
+        body('name').optional().not().isEmpty().withMessage('Name must not be empty'),
+        body('description').optional().not().isEmpty().withMessage('Description must not be empty'),
+        body('price').optional().isFloat({ gt: 0 }).withMessage('Price must be greater than 0')
     ],
     updateItem
 )

@@ -1,12 +1,10 @@
-class NotFoundError extends Error {
-    constructor(message = 'Route not found') {
+class BadRequestError extends Error {
+    constructor(message = 'Bad request') {
         super(message);
-        this.statusCode = 404;
-
+        this.statusCode = 400;
+        
         // Ensure the name of this error is the same as the class name
         this.name = this.constructor.name;
-
-        // Capture the stack trace
         Error.captureStackTrace(this, this.constructor);
     }
 
@@ -15,4 +13,4 @@ class NotFoundError extends Error {
     }
 }
 
-module.exports = { NotFoundError };
+module.exports = { BadRequestError };
