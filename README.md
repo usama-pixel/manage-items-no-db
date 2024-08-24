@@ -26,14 +26,14 @@ Install packages with npm
 
 ## API Reference
 
-#### Get all items
+### Get all items
 
 ```http
   GET /api/items
 ```
 #### Sample
 ##### Request
-```request
+```http
 GET http://localhost:3000/items
 ```
 ##### Response
@@ -54,7 +54,7 @@ GET http://localhost:3000/items
 ]
 ```
 
-#### Get item
+### Get item
 
 ```http
   GET /api/items/${id}
@@ -66,7 +66,7 @@ GET http://localhost:3000/items
 
 #### Sample
 ##### Request
-```request
+```http
 GET http://localhost:3000/items/1
 ```
 ##### Response
@@ -79,7 +79,7 @@ GET http://localhost:3000/items/1
 }
 ```
 
-#### Create item
+### Create item
 
 ```http
     POST /api/items
@@ -114,7 +114,7 @@ BODY {
 }
 ```
 
-#### Update item
+### Update item
 
 ```http
     PUT /api/items
@@ -147,7 +147,7 @@ BODY {
 }
 ```
 
-#### Delete item
+### Delete item
 
 ```http
     DELETE /api/items/${id}
