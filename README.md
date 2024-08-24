@@ -24,16 +24,6 @@ Install packages with npm
 ```
 
 
-## Endpoints
-
-### Endpoint 1: 
-URL: `http://localhost:3000/items`
-
-Method: `GET`
-
-Response:
-
-
 ## API Reference
 
 #### Get all items
