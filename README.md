@@ -96,7 +96,7 @@ GET http://localhost:3000/items/1
 #### Sample
 ##### Request
 ```request
-POST http://localhost:3000/items/1
+POST http://localhost:3000/items
 BODY {
   "id": 5,
   "name": "Lord of the rings",
