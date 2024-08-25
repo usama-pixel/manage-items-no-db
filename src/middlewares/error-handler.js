@@ -4,7 +4,6 @@ const { NotFoundError } = require("../errors/not-found-error");
 const { RequestValidationError } = require("../errors/request-validation-error");
 
 const errorHandler = (err, req, res, next) => {
-    console.log(err instanceof RequestValidationError)
     console.log(err.stackTrace)
     if (
         err instanceof NotFoundError ||
